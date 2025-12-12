@@ -1,0 +1,1359 @@
+/*Encabezado*/
+
+/*Barra y botton de buscar*/
+.navbar-content {
+    display: flex;              
+    justify-content:center;    
+    width: 100%;                 
+  }
+
+/*Fondo del encabezado color gris para simular una tipo saturacion*/
+.navbar-glass {
+  background: rgba(154, 152, 152, 0.4);
+  backdrop-filter: grayscale(100%);
+  -webkit-backdrop-filter: grayscale(100%);  
+  color: white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/*Tamaño de la barra de navegacion*/
+.form-control{
+  height:50px ;
+  width: 500px;
+}
+
+/*Color de la lupa de busqueda*/
+.busqueda .material-symbols-outlined {
+  color: #000000; 
+}
+
+/*Posicion del la lupa de busqueda*/
+form.d-flex {
+  position: relative;
+  
+}
+
+/* Posicionamiento de la lupa de busqueda con el label*/
+form.d-flex .busqueda {
+  position: absolute;
+  right: 20px;
+  top: 55%;
+  transform: translateY(-50%);
+  color: #000;
+  text-decoration: none;
+}
+
+/*Logo*/
+.navbar-brand img{
+    height: 50px; 
+    width: 250px;
+}
+
+/* Iconos*/
+.material-symbols-outlined {
+  font-size: 2.5rem;
+  color: rgb(255, 252, 252);
+}
+
+/*Fondo*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+.imagen {
+    background-image: url("IMAGENES/FONDO_5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  /*------------------------------------------------------------------*/
+  /*Tamaño del carrusel*/
+  .carrusel-contenedor {
+    padding-top: 100px; 
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+   
+  }
+  
+  
+  #carouselExampleIndicators {
+    width: 850px; 
+    max-width: 90%;
+  }
+  /*------------------------------------------------------------------*/
+  /*Tarjetas*/
+
+  /*Separacion de las cartas y pocicion*/
+  .tarjetas {
+    display:flex; 
+    justify-content:center;
+    padding-bottom: 40px;
+   
+  }
+  
+  /*Estilo de la tarjeta*/
+  .card{
+    background: #302f2f;
+    align-items: center;
+    border-radius: 50px; 
+    min-height: 350px;
+    width: 300px; 
+    margin: 0 40px;
+  }
+
+  /*Borde de la imagen de la tarjeta*/
+  .card-img-top{
+    border-radius: 50px;
+    height: 400px;
+    width: 300px; 
+  }
+  
+  /*Botones de las tarjetas*/
+ .button{
+  border-radius: 20px;
+  background:  rgba(53, 53, 53, 0.4);
+  color: rgb(255, 252, 252);
+  height: 45px;
+  width: 150px;
+ }
+ 
+ /*Fondo del texto*/
+ .card-body {
+  background-color: #302f2f;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+/*Color del texto*/
+.card-text {
+  color: white;
+  text-align:justify;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+/*Pie de pagina de la carta*/
+.card-footer{
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgba(32, 30, 30, 0.4),rgba(32, 30, 30, 0.4) );
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 5px;
+  padding-top: 10px;
+  width: 100%;
+ }
+
+ /*Estilo del titulo de la carta*/
+ .card-title{
+  color: azure;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
+/*------------------------------------------------------------------*/
+/*Galeria*/
+
+/*Galeria - estilos y posicion*/
+.galeria{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+/*Estilos de la tarjeta*/
+.gale{
+  background: #302f2f;
+  align-items: center;
+  border-radius: 35px; 
+  width: 250px; 
+  margin: 0 25px;
+  overflow: hidden;
+
+}
+
+/*Imagen de la tarjeta*/
+.gale-img-top{
+  border-radius: 35px;
+  object-fit: cover;
+  object-position:top;
+  width: 100%;
+  height: 200px;
+}
+
+/*Fondo de la galeria*/
+.gale-body{
+  background-color: #302f2f;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+/*Estilo y color del texto*/
+  .gale-title{
+  color: aliceblue;
+  text-align: center;
+  font-family:'Sawarabi Mincho', serif;
+}
+
+/*------------------------------------------------------------------*/
+/*Formulario acordeon*/
+
+/*Estilos y tamaño del acordeon*/
+.formulario{
+  width: 350px;
+  margin-left:5%;
+}
+
+/*Texto del formulario
+titulo del acoordion(Dato curioso, Sabias que, Curiosidad de wind breaker, detras del anime)*/
+.texto {
+  width: 100%;
+  text-align: center;
+  font-family:'Sawarabi Mincho', serif;
+  font-size: 1.6rem;
+}
+
+/*Texto dentro del acoordion*/
+.texto-accordion{
+  text-align: justify;
+}
+
+/*Color para el contenedor que tiene el texto*/
+.accordion-body{
+  background-color: #333131;
+  color:aliceblue;
+  padding: 13px;
+  font-size: 15px;
+}
+
+/*Color para el contenedor que tiene el titulo*/
+.accordion-button{
+  background-color: #003072;
+  color: aliceblue;
+  padding: 3px;
+}
+
+/*------------------------------------------------------------------*/
+
+/*Video de decoracion al lado del formulario*/
+/*Tamaño del video*/
+.video-img-top{
+  width: 500px;
+  height: auto; 
+  border-radius: 10px;
+}
+.formulario-video{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 40px; 
+  gap: 30px; 
+}
+
+/*------------------------------------------------------------------*/
+/*Tarjeta con el texto abajo del video*/
+/*Estilos de la tarjeta*/
+.titulo-especial{
+  display: flex;
+  justify-content:end;
+  margin-right: 30px;
+  padding:5px;
+ 
+}
+
+/*Fondo de la tarjeta*/
+.titulo{
+  background: #2e2e2e;
+  text-align: center;
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+  position: relative; 
+  overflow: hidden;   
+}
+
+/*Texto de la tarjeta*/
+.titulo-text{
+  color: rgb(255,255,255);
+  text-align: justify;
+  font-size: 1.05rem;
+}
+
+/*Imagen de la tarjeta*/
+.titulo-img{
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+  opacity: 0.1; 
+  font-family:'Sawarabi Mincho', serif;
+}
+
+/*Titulo de la tarjeta*/
+.titulo-title{
+  color: rgb(255,255,255);
+  font-size: 3rem;
+  font-family:'Sawarabi Mincho', serif;
+
+}
+
+/*Boton*/
+.boton{
+  border-radius: 15px;
+  background:#3c4249;
+  height: 45px;
+  width: 150px;
+  color: rgb(255,255,255);
+
+}
+
+/*Texto sobre la imagen*/
+.titulo-img-overlay {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*------------------------------------------------------------------*/
+/*Modal*/
+/*Estilo de la tarjeta*/
+.mdal{
+  background: #2e2e2e;
+  height:auto;
+  width: 500px;
+  border-radius: 20px;
+}
+
+/*Orden de los componentes de la tarjeta del modal*/
+.md{
+  text-align: center;
+  align-items: center;
+}
+
+/*Video del modal*/
+.mdvideo-img-top{
+  height: auto;
+  width: 500px;
+  border-radius: 10px;
+}
+
+/*Texto del modal*/
+.md-text{
+  color: rgb(255, 252, 252);
+  font-size: 1.03;
+  font-family:'Sawarabi Mincho', serif ;
+  
+}
+
+/*----------------------Modal-Diseño--------------------------------*/
+/*Boton del modal*/
+.mdal-primary{
+  border-radius:15px;
+  background: rgba(154, 152, 152, 0.4);
+  color: rgb(255, 252, 252);
+  font-family:'Sawarabi Mincho', serif ;
+  font-size: 1.3rem;
+}
+
+/*Titulo del modal*/
+.modal-title{
+  font-family:'Sawarabi Mincho', serif;
+  width: 100%;
+  text-align: center;
+}
+
+/*Botones de enviar y cerrar dentro del modal*/
+.modal-primary{
+  border-radius: 15px;
+  font-size:1.3rem;
+  background:rgb(77, 137, 3);
+  color: rgb(255,255,255);
+  margin-left: 20px;
+  width: 150px;
+}
+
+.modal-secondary{
+  border-radius: 15px;
+  font-size:1.3rem;
+  background:rgb(168, 3, 3);
+  color: rgb(255,255,255);
+  margin-left: 20px;
+  width: 150px;  
+}
+
+/*Botones centrados*/
+.modal-footer {
+  justify-content: center;
+}
+
+/*Texto y label para que queden de forma horizontal*/
+.forma-horizontal {
+  display: flex;
+  align-items: center;
+}
+
+/* Tamaño fijo del label*/
+.forma-horizontal .col-form-label {
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: 1.15rem;
+  text-align: right;
+  width: 140px;
+}
+
+/* Input y textarea crecen para ocupar el espacio */
+.custom-input,.custom-textarea {
+  flex: 1;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+/*Color de fondo para el contenedor del modal*/
+.modal-body, .modal-header, .modal-footer{
+  background: #2e2e2e;
+  color: rgb(255,255,255);
+}
+
+/*------------------------------------------------------------------*/
+/* Diseño del contenedor del modal y tarjeta para ponerlo a abajo del formulario y aun lado del contenedor*/
+.titulo-especial-modal{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 40px; 
+  gap: 30px; 
+}
+
+/*------------------------------------------------------------------*/
+/*Formulario*/
+/*Posicionamiento de la imagen y el formulario */
+.final-form{
+  position: relative;
+  width: 600px;
+  height: 550px;
+  background: #2e2e2e;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  display: flex;
+}
+
+/*Contenedor principal*/
+.form-final{
+  display: flex;
+  justify-content:center;
+  padding:10px;
+}
+
+/*Imagen del formulario*/
+.final-img-top{
+  border-radius: 30px;
+  width: 600px;
+  height: 550;
+  border-radius: 15px;
+  opacity: 0.4; 
+  object-fit: cover;
+  font-family:'Sawarabi Mincho', serif;
+}
+
+/*Imagen del formulario*/
+.img-final-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*Texto del formulario*/
+.form-text, .form-label{
+  color: rgb(255,255,255);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.titulo-form{
+  text-align: center;
+  color: rgb(255,255,255);
+}
+
+.form-pregunta {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(255,255,255);
+}
+
+
+/*Checkbox del formulario*/
+.form-check-input{
+  align-items: center;
+  color: rgb(255,255,255);
+  margin-left: 10px;
+}
+
+/*Texto de los botones del checkbox*/
+.form-check-label{
+  color: rgb(255,255,255);
+}
+
+/*Boton de el formulario*/
+.enviar{
+  border-radius: 15px;
+  color: rgb(255,255,255);
+  background: #2e2e2e;
+  align-items: center;
+  width: 300px;
+  margin-left: 115px;
+}
+
+/*Label*/
+.form-control{
+  width: 500px;
+  height: 50px;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+
+
+/* Agrupa los radios en columna */
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Centra la pregunta y los botones */
+.mb-3 {
+  text-align: center;
+}
+
+/* Muestra los radios en la misma línea */
+.mb-3 .form-check {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+/* Espacio entre el botón y el texto */
+.form-check-input {
+  margin-right: 8px;
+}
+
+/*--------------------------------------------------------*/
+/*Footer*/
+.final-derechos-reservados{
+  background:rgba(0, 0, 0, 0.4);
+  color: rgb(255,255,255);
+  width: auto;
+  height:55px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-family:'Sawarabi Mincho', serif;
+}
+
+/*Imagen con el footer*/
+.logo-footer{
+  width: auto;
+  height: 35px;
+}
+
+/*C del footer*/
+.c{
+  font-size: 1.6rem;
+}
+
+/*Imagen del dragon para el footer*/
+.icono-footer{
+  width: auto;
+  height: 55px;
+  margin-right: 10px;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*parte resposiva*/
+
+/*Telefono celular*/
+
+@media (max-width: 768px) {
+
+  /*--------------------------Encabezado----------------------------*/
+  .navbar-glass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    position: relative;
+  }
+
+  /* Logo */
+  .container-fluid {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .navbar-brand {
+    order: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand img {
+    height: 70px;
+    width: 300px;
+  }
+
+  /* Barra de navegación y lupa */
+  .navbar-content {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  form.d-flex {
+    position: relative;
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    padding-right: 50px;
+  }
+
+  .busqueda {
+    position:absolute;
+    right: 20px;
+    top: 50%;
+  }
+
+  /* Iconos */
+  .iconos {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*-----------------------------------------------------------*/
+  /*--------------------------Carrucel------------------------*/
+
+  .carrusel-contenedor {
+    width: 100vw;
+    margin: 0;
+    padding: 3px;
+    margin-top: 20px;
+  }
+
+  #carouselExampleIndicators {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .carousel-item {
+    height: 100%;
+  }
+   /*-----------------------------------------------------------*/
+   /*------------------------------Tarjetas---------------------*/
+   .tarjetas {
+    padding: 20px;
+  }
+
+  .tarjetas .row {
+    flex-direction: column;
+    align-items: center;
+  }
+   /*-----------------------------------------------------------*/
+  /*-------------------------Galeria----------------------------*/
+  .galeria .row {
+    display: flex;
+    justify-content: center;    
+  }
+  
+  .galeria .col {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .gale {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .gale-img-top {
+    width: 100%;
+    height: 200px;
+  }
+
+  /*-----------------------------------------------------------*/
+  /*----------------Formulario-acordion y video-decorativo----------------*/
+  /* Contenedor principal en columna */
+.formulario-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Formulario*/
+.formulario {
+  width: 300px;
+  max-width: 600px; 
+ margin-right: 15px;
+}
+
+/* Estilos del acordeón */
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Video debajo del formulario */
+.video-decoration {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.decoration-video {
+  width: 100%;
+  max-width: 600px; 
+}
+
+.video-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+ /*-----------------------------------------------------------*/
+ /*-----------------------Modal y imagen------------------------*/
+ .titulo-especial-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.mdal {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mdvideo-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.md-body {
+  padding: 0 15px;
+}
+
+.md-text {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.modal-dialog {
+  width: 71%;
+  margin: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Imagen*/
+
+.titulo-especial {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.titulo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center; 
+  width: 100%;
+  max-width: 800px; 
+  height: 400px;
+  text-align: justify;
+  margin-left: 8%;
+}
+
+.titulo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.titulo-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.titulo-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/*----------------------------------------------------------------------*/
+
+/*-----------------------Formulario------------------------*/
+/* Contenedor general del formulario */
+.form-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Contenedor del video y el formulario */
+.final-form {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  flex-direction: column;
+  height: 600px;
+}
+
+/* Video de fondo */
+.final-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay que contiene el formulario encima del video */
+.img-final-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilo del formulario */
+.img-final-overlay form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título del formulario */
+.titulo-form {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-pregunta{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-control{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.enviar {
+  display: block;
+  margin: 0 auto;
+}
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------Footer---------------------------------*/
+
+.final-derechos-reservados footer {
+  flex-direction: column;
+}
+
+.icono-footer {
+  height: 20px;
+  width: auto;
+}
+
+.logo-footer{
+  height: 10px;
+  width: auto;
+}
+
+.final-derechos-reservados {
+  font-size: 0.8rem;
+}
+.c{
+  font-size: 1rem;
+}
+
+/*-----------------------------------------------------------------*/
+
+}
+
+/*------------------------------------------------------------------*/
+
+/*Tablets*/
+@media  (min-width: 600px) and (max-width: 1024px){
+
+  /*--------------------------Encabezado----------------------------*/
+  .navbar-glass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    position: relative;
+  }
+
+  /* Logo */
+  .container-fluid {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .navbar-brand {
+    order: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-brand img {
+    height: 70px;
+    width: auto;
+  }
+
+  /* Barra de navegación y lupa */
+  .navbar-content {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  form.d-flex {
+    position: relative;
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    padding-right: 50px;
+  }
+
+  .busqueda {
+    position:absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+  }
+
+  /* Iconos */
+  .iconos {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*-----------------------------------------------------------*/
+  /*--------------------------Carrucel------------------------*/
+
+  .carrusel-contenedor {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  #carouselExampleIndicators {
+    width: 100%;
+    height: 38vh;
+  }
+
+  .carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .carousel-item {
+    height: 100%;
+  }
+
+   /*-----------------------------------------------------------*/
+   /*------------------------------Tarjetas---------------------*/
+   .tarjetas .row {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+
+  .tarjetas .col {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+   /*-----------------------------------------------------------*/
+  /*-------------------------Galeria----------------------------*/
+  .galeria {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .galeria .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 10px;
+    width: 100%;
+    max-width: 600px; 
+  }
+  
+  .galeria .col {
+    flex: 0 0 48%; 
+    max-width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .gale-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  
+
+  /*-----------------------------------------------------------*/
+  /*----------------Formulario-acordion y video-decorativo----------------*/
+/* Contenedor principal */
+.formulario-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  padding: 20px 0; 
+}
+
+/* Formulario centrado */
+.formulario {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; 
+}
+
+/* Acordeón */
+.accordion-item {
+  overflow: hidden;
+}
+
+/* Contenedor del video */
+.video-decoration {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+/* Video */
+.decoration-video {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Imagen del video */
+.video-img-top {
+  width: 100%;
+  height: 400px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+
+ /*-----------------------------------------------------------*/
+ /*-----------------------Modal y imagen------------------------*/
+ .titulo-especial-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Contenido del modal */
+.mdal {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 30px auto; 
+  text-align: center;
+}
+
+/* Imagen del modal */
+.mdvideo-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Texto */
+.md-text {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Centrado del modal completo */
+.modal-dialog {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor del título especial */
+.titulo-especial {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenido del título */
+.titulo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+/* Imagen principal */
+.titulo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Overlay centrado sobre la imagen */
+.titulo-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Título y texto */
+.titulo-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.titulo-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*-----------------------Formulario------------------------*/
+/* Contenedor general del formulario */
+.form-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Contenedor del video y el formulario */
+.final-form {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-width: 600;
+  flex-direction: column;
+  height: 630px;
+}
+
+/* Video de fondo */
+.final-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay que contiene el formulario encima del video */
+.img-final-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilo del formulario */
+.img-final-overlay form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título del formulario */
+.titulo-form {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-pregunta{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-control{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.enviar {
+  display: block;
+  margin: 0 auto;
+}
+/*----------------------------------------------------------------------*/
+
+/*-------------------------------Footer---------------------------------*/
+
+.final-derechos-reservados footer {
+  flex-direction: column;
+}
+
+.icono-footer {
+  height: 40px;
+  width: auto;
+}
+
+.logo-footer{
+  height: 30px;
+  width: auto;
+}
+
+.final-derechos-reservados {
+  font-size: 1.5rem;
+}
+.c{
+  font-size: 2rem;
+}
+/*-----------------------------------------------------------------*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
